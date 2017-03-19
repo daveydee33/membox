@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+  </head>
+
+  <body>
+    <h1>JavaScript TODO list app</h1>
+
+    <div>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
+      <input id="addTodoTextInput" type="text" autofocus />
+      <button onclick="handlers.addTodo()">Add Todo</button>
+    </div>
+    
+    <div>
+      <input id="changeTodoPositionInput" type="number" />
+      <input id="changeTodoTextInput" type="text" />
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+    </div>
+    
+    <div>
+      <input id="toggleCompletedPosition" type="number" />
+      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+    </div>
+    
+    <div>
+      <button onclick="view.displayTodos()">Display Todos</button>
+      <ul id="todosUl"></ul>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+
+</html>

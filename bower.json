@@ -1,0 +1,21 @@
+{
+  "name": "membox",
+  "description": "MemBox v2 - Node, React, MongoDB",
+  "main": "index.js",
+  "authors": [
+    "Dave Degeatano"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/daveydee33/membox",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

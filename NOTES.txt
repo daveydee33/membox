@@ -1,0 +1,59 @@
+# Install project dependencies.  'save' will save them to the package.json (i think...)
+# --save-dev will save them to devDependencies in the pacakge.json.
+# many changes require restart node webserver.  the nodemon will monitor for file changes and auto restart.
+  npm install --save express
+  npm install --save mongodb
+  npm install --save-dev react react-dom
+  npm install --save-dev webpack
+  npm install --save-dev babel-cli babel-loader babel-preset-es2015 babel-preset-stage-2 babel-preset-react
+  npm install --save-dev nodemon
+
+  npm install -g bower
+
+
+
+Note to starting a project.
+- git init
+- npm init
+  - creates package.json with some default info about the project (description, author, version, license, etc.)
+- npm install (--save express)
+  - adds 'express' dependencies to package.json and downloads them to 'node_modules' dir.
+- add a script line to package.json for nodemon.
+  - this is so that i can use "npm start" and it know what file to start the application AND uses nodemon that watches for file updates and automatically restarts the node server so I don't have to keep doing it manually.
+  - "start": "nodemon app.js"
+- create: .gitignore
+  - this file excludes stuff from uploading to git.
+  - add this line to the file: node_modules
+- create: .bowerrc
+  - add this line.  this installs all the bower stuff (bootstrap, css, jss) to a 'lib' directory so it doesn't get mixed up with rest of our own js and css files
+  {
+    "directory": "public/lib"
+  }
+
+- create the directory structures...
+- public to hold static HTML/CSS ?
+- start testing the app.js with express?
+
+- bower init
+  - bower is like the front end package manager.
+  - works a lot like npm.
+- bower install --save bootstrap
+  - will save bootstrap and jquery to public/lib... because we defined in .bowerrc
+- bower install font-awesome --save
+
+
+Downloaded JSHint and JSCS config files and copied to my project.
+https://github.com/jonathanfmills/CodingStandards
+.jscsrc
+.jshintrc
+
+node install -g jshint
+node install -g jscs
+
+
+# installed Gulp (globally)
+npm install -g gulp 
+
+# but then we also have to install it locall to the project
+npm install --save-dev gulp
+

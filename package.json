@@ -1,0 +1,39 @@
+{
+  "name": "membox",
+  "version": "1.0.0",
+  "description": "MemBox v2 - Node, React, MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveydee33/membox.git"
+  },
+  "author": "Dave Degeatano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daveydee33/membox/issues"
+  },
+  "homepage": "https://github.com/daveydee33/membox#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "eslint": "^3.18.0",
+    "eslint-plugin-react": "^6.10.0",
+    "gulp": "^3.9.1",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.2.1"
+  }
+}
